@@ -1,0 +1,62 @@
+.row, .col{
+    display: flex;
+}
+
+.row{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-container{
+    margin: 0 auto;
+    // padding: 20px;
+    // width: 100%;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    padding : 10px;
+    background-color: aquamarine;
+    color: black;
+}
+
+.wrapper{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+nav{
+	width: 100%;
+	padding: 10px;
+	background: #009688;
+	color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+}
+
+.heading{
+	font-size: 32px;
+}
+
+.info{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .detail{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+gv-actions{
+    flex :1;
+}
+
+.node{
+    border: none;
+    margin: 0 10px;
+}

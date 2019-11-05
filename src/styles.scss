@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+/**
+VARIABLES AND THEME COLORS
+**/
+
+$base-color: #f5f5f5;
+$border-dark: rgba($base-color, 0.88);
+$primary-font : "Work Sans";
+
+body{
+    margin : 0;
+    padding : 0;
+    background-color: $base-color;    
+    font-family: $primary-font;
+    box-sizing: border-box;
+}
+
+//clear margin and padding
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.isStartNode{
+    // background-color: #ff00a5 !important;
+    background: url('/assets/place.svg');
+    background-repeat: no-repeat;
+}
+
+.isEndNode {
+    // background-color:orangered !important;
+    background: url('/assets/flag.svg');
+    background-repeat: no-repeat;
+
+}
+
+.node{
+    display: inline-block;
+    padding: 10px;
+    content: "";
+    border : 1px solid #afc3c2;
+    margin-bottom: -5px;
+    margin-right: -1px;
+
+}
+
+.isVisited{
+    background-color: lightcoral;
+}
+
+
+
+.isWall{
+    background-color: black
+}
+
+.inPath{
+    background-color: yellow !important;
+}

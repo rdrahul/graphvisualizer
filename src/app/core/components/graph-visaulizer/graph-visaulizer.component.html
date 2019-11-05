@@ -1,0 +1,41 @@
+<div class="grid-container">
+    <nav>
+        <div class="heading">
+          Graph Visualisation
+        </div>  
+        <gv-actions [actions] = "actions" (taken)="ActionTakenHandler($event)" >
+        </gv-actions>
+    </nav>
+    <div class="info">
+        <div class="detail">
+            <div class="node isStartNode"></div>
+            <div class="text">Starting Point(drag to change) </div>
+        </div>
+        <div class="detail">
+            <div class="node isEndNode"></div>
+            <div class="text">Ending Point (drag to change)</div>
+        </div>
+        <div class="detail">
+            <div class="node isWall"></div>
+            <div class="text">Creates a Wall (click and drag on cells) </div>
+        </div>
+        <div class="detail">
+            <div class="node isVisited"></div>
+            <div class="text">Discovered Nodes</div>
+        </div>
+        <div class="detail">
+            <div class="node inPath"></div>
+            <div class="text">Shortest Path </div>
+        </div>
+    </div> 
+  
+
+    <div class="wrapper" (mousedown)="MouseDown($event)" (mouseup)="MouseUp($event)" >
+        <div *ngFor="let r of [].constructor(rows);let rn = index;" class="row">
+            <div *ngFor = "let c of [].constructor(cols);let cn= index" class="col" >
+                <gv-node #node [node]="nodes[rn][cn]" [isClicked]="IsClicked" (dropped) = "Drop($event)" ></gv-node>
+            </div>
+        </div>
+    </div>
+
+</div>
