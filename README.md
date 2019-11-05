@@ -3,7 +3,7 @@
 Visualize path finding algorithms in a fun way.
 
 ![Alt Text](/images/rec.gif)
-
+[Working Demo](https://practical-wiles-3b49f2.netlify.com/)
 
 # Introduction
 This is a fun project created in Angular 8 . This project aims to show basic path finding Algorithms in a visual manner. Currently this has only Djikstra's Algorithms but i am thinking of adding more algorithms in coming week.
