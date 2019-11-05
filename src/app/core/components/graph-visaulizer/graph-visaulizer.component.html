@@ -33,7 +33,7 @@
     <div class="wrapper" (mousedown)="MouseDown($event)" (mouseup)="MouseUp($event)" >
         <div *ngFor="let r of [].constructor(rows);let rn = index;" class="row">
             <div *ngFor = "let c of [].constructor(cols);let cn= index" class="col" >
-                <gv-node #node [node]="nodes[rn][cn]" [isClicked]="IsClicked" (dropped) = "Drop($event)" ></gv-node>
+                <gv-node #node [node]="nodes[rn][cn]"  (dropped) = "Drop($event)" ></gv-node>
             </div>
         </div>
     </div>
