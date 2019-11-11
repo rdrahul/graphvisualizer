@@ -1,4 +1,4 @@
 export default interface Point {
-    row: number ;
-    col: number ;
+  row: number;
+  col: number;
 }
