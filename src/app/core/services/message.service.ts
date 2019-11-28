@@ -2,32 +2,28 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MessageService {
-
   messages = new Subject();
   messages$ = this.messages.asObservable();
 
   isMouseClicked: boolean = false;
 
-  constructor() { 
+  constructor() {}
+
+  notify(message) {
+    this.messages.next(message);
   }
 
-  notify( message ) {
-    this.messages.next( message );
-  }
-
-  MouseClicked(){
+  MouseClicked() {
     this.isMouseClicked = true;
   }
-  MouseRelease(){
+  MouseRelease() {
     this.isMouseClicked = false;
   }
 
-  GetMouseClicked(){
+  GetMouseClicked() {
     return this.isMouseClicked;
   }
-
-
 }

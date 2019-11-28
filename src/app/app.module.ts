@@ -6,21 +6,17 @@ import { AppComponent } from './app.component';
 import { GraphVisaulizerComponent } from './core/components/graph-visaulizer/graph-visaulizer.component';
 import { NodeComponent } from './core/components/node/node.component';
 import { ActionsComponent } from './core/components/actions/actions.component';
-import { DragDropModule } from "@angular/cdk/drag-drop";
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     GraphVisaulizerComponent,
     NodeComponent,
-    ActionsComponent
+    ActionsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    DragDropModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, DragDropModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

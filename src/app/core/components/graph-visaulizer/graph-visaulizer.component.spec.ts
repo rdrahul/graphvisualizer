@@ -8,9 +8,8 @@ describe('GraphVisaulizerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GraphVisaulizerComponent ]
-    })
-    .compileComponents();
+      declarations: [GraphVisaulizerComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
