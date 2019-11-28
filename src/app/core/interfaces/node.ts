@@ -46,5 +46,6 @@ export default class Node {
         this.inPath = false;
         this.isStartNode = false;
         this.isEndNode = false;
+        this.distance = 9999999;
     }
 }
